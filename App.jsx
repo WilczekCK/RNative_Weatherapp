@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Header from './components/Header';
 
-import  Home  from './views/Home';
-import  Search  from './views/Search';
-import  Settings from './views/Settings';
 
 import {
   ImageBackground,
@@ -17,7 +15,6 @@ import {
 } from 'react-native';
 
 
-const Stack = createNativeStackNavigator();
 function App() {
   const [weatherBackground, setWeatherBackground] = React.useState('unset');
 
@@ -41,13 +38,7 @@ function App() {
             resizeMode="cover"
             style={styles.rootImageBackground}
             >
-              <NavigationContainer>
-                <Stack.Navigator initialRouteName="Home">
-                  <Stack.Screen name="Home"     component={Home} />
-                  <Stack.Screen name="Settings" component={Settings} />
-                  <Stack.Screen name="Search"   component={Search} />
-                </Stack.Navigator>
-              </NavigationContainer>
+            <Header />
           </ImageBackground>
         </View>
       </ScrollView>
