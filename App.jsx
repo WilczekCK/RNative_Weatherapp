@@ -9,8 +9,6 @@ import {
   Dimensions
 } from 'react-native';
 
-
-
 function App() {
   const [weatherBackground, setWeatherBackground] = React.useState('unset');
 
