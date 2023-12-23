@@ -12,7 +12,11 @@ function Header() {
     return (
         <NavigationContainer>
             <Stack.Navigator 
-            initialRouteName="Home" 
+            initialRouteName="Home"
+            screenOptions={{
+                animation: 'fade',
+                headerShown: false
+            }}
             >
                 <Stack.Screen 
                 name="Home"     
