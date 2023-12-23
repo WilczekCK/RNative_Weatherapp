@@ -15,25 +15,26 @@ function Header() {
             initialRouteName="Home"
             screenOptions={{
                 animation: 'fade',
-                headerShown: false
+                headerShown: false,
+                presentation: 'containedModal',
+                contentStyle: {
+                    backgroundColor: 'transparent',
+                },
             }}
             >
                 <Stack.Screen 
                 name="Home"     
                 component={Home} 
-                options={{header: () => false}}
                 />
                 
                 <Stack.Screen 
                 name="Settings" 
                 component={Settings} 
-                options={{headerRight: () => <Text>Back</Text>}}    
                 />
             
                 <Stack.Screen 
                 name="Search"   
                 component={Search} 
-                options={{headerRight: () => <Text>Back</Text>}}
                 />
             </Stack.Navigator>
         </NavigationContainer>
