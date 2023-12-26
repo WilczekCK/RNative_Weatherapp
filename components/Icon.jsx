@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, View, Button, TouchableOpacity } from 'react-native';  
 
 function Icon(props) {
-    const {name, link, navigation, width, height} = props; 
+    const {name, link, navigation, width, height, textAlign} = props; 
     
     return (
         <View className="icon__container">
@@ -21,8 +21,9 @@ function Icon(props) {
                                 navigation.navigate(link)
                             }
                             style={{
-                                width:  width  ?? 30,
-                                height: height ?? 30
+                                width:  Number.parseInt(width ?? 30),
+                                height: Number.parseInt(height ?? 30),
+                                textAlign: textAlign ?? 'left'
                             }}
                             />
                         </TouchableOpacity>
@@ -32,8 +33,8 @@ function Icon(props) {
                         alt={ICONS_IMAGES[name].alt}
                         resizeMode="contain"
                         style={{
-                            width:  width  ?? 30,
-                            height: height ?? 30
+                            width:  Number.parseInt(width  ?? 30),
+                            height: Number.parseInt(height ?? 30),
                         }}
                     />
                 )
