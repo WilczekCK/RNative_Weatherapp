@@ -37,6 +37,36 @@ const Home = ({navigation}) => {
                 height="80"
               />
             </View>
+
+            <View style={styles.sunriseSunsetContainer}>
+              <View style={styles.sunriseContainer}>
+                <Heading 
+                  heading="h4"
+                  color="#E1E1E1"
+                >
+                  SUNRISE
+                </Heading>
+
+                <Heading 
+                  heading="h2"
+                >
+                  6:11AM
+                </Heading>
+              </View>
+              <View style={styles.sunsetContainer}>
+                <Heading 
+                  heading="h4"
+                  color="#E1E1E1"
+                >
+                  SUNSET
+                </Heading>
+                <Heading 
+                  heading="h2"
+                >
+                  9:54PM
+                </Heading>
+              </View>
+            </View>
           </View>
         </>
     );
@@ -52,7 +82,18 @@ const styles = StyleSheet.create({
   weatherVisualStatus: {
     paddingTop:     10,
     paddingBottom:  10
-  }
+  },
+  sunriseSunsetContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  sunriseContainer: {
+    width: '65%'
+  },
+  sunsetContainer: {
+    width: '65%'
+  },
 })
 
 
