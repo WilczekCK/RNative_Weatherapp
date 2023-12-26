@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, View, Button, TouchableOpacity } from 'react-native';  
 
 function Icon(props) {
-    const {name, link, navigation} = props; 
+    const {name, link, navigation, width, height} = props; 
     
     return (
         <View className="icon__container">
@@ -20,6 +20,10 @@ function Icon(props) {
                             onPress={() =>
                                 navigation.navigate(link)
                             }
+                            style={{
+                                width:  width  ?? 30,
+                                height: height ?? 30
+                            }}
                             />
                         </TouchableOpacity>
                 ) : (
