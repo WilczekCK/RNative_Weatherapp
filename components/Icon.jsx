@@ -31,6 +31,10 @@ function Icon(props) {
                         source={ICONS_IMAGES[name].uri}
                         alt={ICONS_IMAGES[name].alt}
                         resizeMode="contain"
+                        style={{
+                            width:  width  ?? 30,
+                            height: height ?? 30
+                        }}
                     />
                 )
             }
