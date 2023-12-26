@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Header from './components/Header';
-
+import Icon from './components/Icon';
 
 import {
   ImageBackground,
@@ -39,6 +39,7 @@ function App() {
             style={styles.rootImageBackground}
             >
             <Header />
+            <Icon name="settings" /> 
           </ImageBackground>
         </View>
       </ScrollView>
