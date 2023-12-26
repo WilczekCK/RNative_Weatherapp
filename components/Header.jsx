@@ -24,11 +24,23 @@ function Header(props) {
             )}
 
             {actualRoute == 'Search' && (
-                <></>  
+                <>                
+                    <Icon 
+                        name="arrowLeftBold" 
+                        link="Home"
+                        navigation={navigation}
+                    /> 
+                </>  
             )}
 
             {actualRoute == 'Settings' && (
-                <></>  
+                <>                
+                    <Icon 
+                        name="arrowLeftBold" 
+                        link="Home"
+                        navigation={navigation}
+                    /> 
+                </>  
             )}
        </View>
     );

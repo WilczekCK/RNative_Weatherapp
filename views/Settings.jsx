@@ -1,15 +1,10 @@
 import { Text, Button } from 'react-native';  
-
+import Header from '../components/Header';
 const Settings = ({navigation}) => {
     return (
         <>
+        <Header actualRoute="Settings" navigation={navigation} />
         <Text>Settings</Text>
-        <Button
-            title="Go to home"
-            onPress={() =>
-                navigation.navigate('Home')
-            }
-        />
       </>
     );
 };
