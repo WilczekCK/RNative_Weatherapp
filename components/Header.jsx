@@ -1,44 +1,45 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Text, Button } from 'react-native';  
+import { View, StyleSheet } from 'react-native';  
+import Icon from '../components/Icon';
 
-import Home from '../views/Home';
-import Search from '../views/Search';
-import Settings from '../views/Settings';
+function Header(props) {
+    const {actualRoute, navigation} = props; 
 
-const Stack = createNativeStackNavigator();
-function Header() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator 
-            initialRouteName="Home"
-            screenOptions={{
-                animation: 'fade',
-                headerShown: false,
-                presentation: 'containedModal',
-                contentStyle: {
-                    backgroundColor: 'transparent',
-                },
-            }}
-            >
-                <Stack.Screen 
-                name="Home"     
-                component={Home} 
-                />
-                
-                <Stack.Screen 
-                name="Settings" 
-                component={Settings} 
-                />
-            
-                <Stack.Screen 
-                name="Search"   
-                component={Search} 
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
+       <View style={styles.header}>
+            {actualRoute == 'Home' && (
+                <>                
+                    <Icon 
+                        name="settings" 
+                        link="Settings"
+                        navigation={navigation}
+                    /> 
+
+                    <Icon
+                        name="search" 
+                        link="Search"
+                        navigation={navigation}
+                    /> 
+                </>  
+            )}
+
+            {actualRoute == 'Search' && (
+                <></>  
+            )}
+
+            {actualRoute == 'Settings' && (
+                <></>  
+            )}
+       </View>
     );
 };
+
+const styles = StyleSheet.create({
+    header: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    }
+});
 
 export default Header;

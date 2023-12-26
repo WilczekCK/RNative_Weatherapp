@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Header from './components/Header';
+import Router from './components/Router';
 
 import {
   ImageBackground,
@@ -37,7 +37,9 @@ function App() {
             resizeMode="cover"
             style={styles.rootImageBackground}
             >
-            <Header />
+            <Router />
+
+
           </ImageBackground>
         </View>
       </ScrollView>
