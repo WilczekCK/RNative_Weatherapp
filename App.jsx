@@ -2,7 +2,6 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Header from './components/Header';
-import Icon from './components/Icon';
 
 import {
   ImageBackground,
@@ -39,7 +38,6 @@ function App() {
             style={styles.rootImageBackground}
             >
             <Header />
-            <Icon name="settings" /> 
           </ImageBackground>
         </View>
       </ScrollView>
@@ -50,12 +48,14 @@ function App() {
 let ScreenHeight = Dimensions.get("window").height;
 const styles = StyleSheet.create({
   rootContainer: {
-    minHeight: ScreenHeight
+    minHeight: ScreenHeight,
   },
   rootImageBackground: {
     flex: 1,
     paddingTop: 20,
     paddingBottom: 20,
+    paddingLeft: '5%',
+    paddingRight: '5%',
   }
 })
 

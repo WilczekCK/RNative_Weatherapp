@@ -1,16 +1,35 @@
 import React from 'react';
-import { Image, View, Text } from 'react-native';  
+import { Image, View, Button, TouchableOpacity } from 'react-native';  
 
 function Icon(props) {
-    const {name} = props; 
+    const {name, link, navigation} = props; 
     
     return (
         <View className="icon__container">
-            <Image 
-                source={ICONS_IMAGES[name].uri}
-                alt={ICONS_IMAGES[name].alt}
-                resizeMode="contain"
-            />
+            {(link && navigation)
+                ? (
+                        <TouchableOpacity 
+                            onPress={() =>
+                                navigation.navigate(link)
+                            }
+                        >
+                            <Image 
+                            source={ICONS_IMAGES[name].uri}
+                            alt={ICONS_IMAGES[name].alt}
+                            resizeMode="contain"
+                            onPress={() =>
+                                navigation.navigate(link)
+                            }
+                            />
+                        </TouchableOpacity>
+                ) : (
+                    <Image 
+                        source={ICONS_IMAGES[name].uri}
+                        alt={ICONS_IMAGES[name].alt}
+                        resizeMode="contain"
+                    />
+                )
+            }
         </View>
     );
 };
