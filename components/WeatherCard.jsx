@@ -29,7 +29,7 @@ const weatherCardStyles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     backgroundColor:'rgba(224, 208, 229, 0.5)',
-    paddingHorizontal:10,
+    paddingHorizontal:6,
     paddingVertical:2,
     borderRadius:14
   },

@@ -69,7 +69,11 @@ const Home = ({navigation}) => {
               </View>
             </View>
 
-            <View>
+            <View style={styles.cardsContainer}>
+              <WeatherCard />
+              <WeatherCard />
+              <WeatherCard />
+              <WeatherCard />
               <WeatherCard />
             </View>
           </View>
@@ -99,6 +103,12 @@ const styles = StyleSheet.create({
   sunsetContainer: {
     width: '65%'
   },
+  cardsContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 8,
+    marginTop: 25
+  }
 })
 
 
