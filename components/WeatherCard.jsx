@@ -1,5 +1,5 @@
 import React, {Children} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Platform} from 'react-native';
 import Heading from './Heading';
 import Icon from './Icon';
 
@@ -25,13 +25,39 @@ function WeatherCard(props) {
   );
 }
 
+const generateBoxShadowStyle = (
+    xOffset,
+    yOffset,
+    shadowColorIos,
+    shadowOpacity,
+    shadowRadius,
+    elevation,
+    shadowColorAndroid,
+  ) => {
+    if (Platform.OS === 'ios') {
+      return {
+        shadowColor: shadowColorIos,
+        shadowOffset: {width: xOffset, height: yOffset},
+        shadowOpacity,
+        shadowRadius,
+      };
+    } else if (Platform.OS === 'android') {
+      return {
+        elevation,
+        shadowColor: shadowColorAndroid,
+      };
+    }
+  };
+
+const shadow = generateBoxShadowStyle(0, 1, '#000000', 0.25, 4, 0, '#000000');
 const weatherCardStyles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     backgroundColor:'rgba(224, 208, 229, 0.5)',
     paddingHorizontal:6,
     paddingVertical:2,
-    borderRadius:14
+    borderRadius:14,
+    ...shadow
   },
   child: {
     marginVertical: 3,
