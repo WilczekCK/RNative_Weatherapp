@@ -2,6 +2,7 @@ import { Text, Button, View, StyleSheet } from 'react-native';
 import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Icon from '../components/Icon';
+import TextWithFont from '../components/TextWithFont';
 
 const Home = ({navigation}) => {
     return (

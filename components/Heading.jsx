@@ -1,19 +1,18 @@
 import React, {Children} from 'react';
 import { Text, View } from 'react-native';  
+import TextWithFont from './TextWithFont';
 
 function Heading(props) {
     const {color, heading, textAlign, children} = props;
 
     return (
         <View className="heading__container">
-            <Text
-                style={{
-                    fontSize: HEADINGS_SIZE[heading] ?? 18,
-                    color:    color         ?? 'white',
-                    textAlign: textAlign    ?? 'center'
-                }}>
-                {children ?? ''}
-            </Text>
+            <TextWithFont
+                    fontSize={HEADINGS_SIZE[heading] ?? 18}
+                    color={color?? 'white'}    
+                    textAlign={textAlign    ?? 'center'}>
+                {children}
+            </TextWithFont>
         </View>
     );
 };
