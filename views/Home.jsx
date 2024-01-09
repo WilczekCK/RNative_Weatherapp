@@ -38,11 +38,11 @@ const Home = ({navigation}) => {
         </View>
 
         <View style={styles.cardsContainer}>
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
-          <WeatherCard />
+          <WeatherCard weather={{time: '5PM', degree: 18, status: 'sun'}}/>
+          <WeatherCard weather={{time: '6PM', degree: 17, status: 'sun'}}/>
+          <WeatherCard weather={{time: '7PM', degree: 17, status: 'cloudSun'}}/>
+          <WeatherCard weather={{time: '8PM', degree: 14, status: 'cloud'}}/>
+          <WeatherCard weather={{time: '9PM', degree: 10, status: 'rainfall'}}/>
         </View>
       </View>
     </>

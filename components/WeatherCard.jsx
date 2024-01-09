@@ -5,22 +5,24 @@ import Icon from './Icon';
 import useBoxShadowGenerator from '../hooks/useBoxShadowGenerator';
 
 function WeatherCard(props) {
+  const {time, degree, status} = props.weather;
+
   return (
     <View
       style={weatherCardStyles.container}
       className="weather__card__container">
       <View style={weatherCardStyles.child}>
         <Heading style={weatherCardStyles.child} heading="h4">
-          5PM
+          {time}
         </Heading>
       </View>
 
       <View style={weatherCardStyles.child}>
-        <Icon name="cloudSun" width="48" />
+        <Icon name={status} width="48" />
       </View>
 
       <View style={weatherCardStyles.child}>
-        <Heading heading="h3">18 C</Heading>
+        <Heading heading="h3">{degree} C</Heading>
       </View>
     </View>
   );
@@ -29,11 +31,11 @@ function WeatherCard(props) {
 const weatherCardStyles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    backgroundColor:'rgba(224, 208, 229, 0.5)',
-    paddingHorizontal:6,
-    paddingVertical:2,
-    borderRadius:14,
-    ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000')
+    backgroundColor: 'rgba(224, 208, 229, 0.5)',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 14,
+    ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
   },
   child: {
     marginVertical: 3,
