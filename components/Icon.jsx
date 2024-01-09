@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, View, Button, TouchableOpacity } from 'react-native';  
 
 function Icon(props) {
-    const {name, link, navigation, width, height, textAlign} = props; 
+    const {name, link, navigation, width, height, textAlign, style} = props; 
     
     return (
         <View className="icon__container">

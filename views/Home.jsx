@@ -2,7 +2,7 @@ import { Text, Button, View, StyleSheet } from 'react-native';
 import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Icon from '../components/Icon';
-import TextWithFont from '../components/TextWithFont';
+import WeatherCard from '../components/WeatherCard';
 
 const Home = ({navigation}) => {
     return (
@@ -67,6 +67,10 @@ const Home = ({navigation}) => {
                   9:54PM
                 </Heading>
               </View>
+            </View>
+
+            <View>
+              <WeatherCard />
             </View>
           </View>
         </>
