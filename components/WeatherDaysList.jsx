@@ -6,7 +6,7 @@ import Icon from './Icon';
 function WeatherDaysList() {
   return (
     <View>
-      Hello world
+      <Text>Hello world</Text>
     </View>
   );
 }

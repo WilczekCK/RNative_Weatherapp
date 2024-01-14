@@ -10,6 +10,7 @@ function WeatherCardSlider() {
     vertical: false,
     width: PAGE_WIDTH / COUNT,
     height: PAGE_WIDTH / 2,
+    position: 'relative',
 
     style: {
       width: PAGE_WIDTH,
@@ -41,7 +42,8 @@ const carouselStyles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    marginVertical: 25,
+    paddingTop: 25,
+    paddingBottom: 140
   },
   item: {
     marginHorizontal: 3,

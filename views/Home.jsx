@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Icon from '../components/Icon';
 import WeatherCardSlider from '../components/WeatherCardSlider';
+import WeatherDaysList from '../components/WeatherDaysList';
 
 const Home = ({navigation}) => {
   return (
@@ -38,6 +39,7 @@ const Home = ({navigation}) => {
         </View>
 
         <WeatherCardSlider/>
+        <WeatherDaysList />
       </View>
     </>
   );
