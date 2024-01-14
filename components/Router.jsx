@@ -9,6 +9,17 @@ import Settings from '../views/Settings';
 
 const Stack = createNativeStackNavigator();
 function Router() {
+  const [weatherBackground, setWeatherBackground] = React.useState('unset');
+
+  function detectWeatherBackground() {
+    // TODO: Ajax check from api.
+    setWeatherBackground(require('../assets/jpgs/sunny.jpg'));
+  }
+
+  React.useEffect(() => {
+    detectWeatherBackground();
+  }, []);
+
   return (
     <View style={{flex: 1}}>
       <NavigationContainer>
@@ -22,11 +33,17 @@ function Router() {
               backgroundColor: 'transparent',
             },
           }}>
-          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Home">
+            {props => <Home {...props} background={weatherBackground} />}
+          </Stack.Screen>
 
-          <Stack.Screen name="Settings" component={Settings} />
+          <Stack.Screen name="Settings">
+            {props => <Settings {...props} background={weatherBackground} />}
+          </Stack.Screen>
 
-          <Stack.Screen name="Search" component={Search} />
+          <Stack.Screen name="Search">
+            {props => <Search {...props} background={weatherBackground} />}
+          </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     </View>

@@ -1,13 +1,16 @@
-import { Text, SafeAreaView, ScrollView } from 'react-native';  
+import { Text, SafeAreaView, ScrollView, ImageBackground } from 'react-native';  
 import Header from '../components/Header';
-const Settings = ({navigation}) => {
+
+const Settings = ({navigation, background}) => {
     return (
-        <SafeAreaView>
-          <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <SafeAreaView>
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
+          <ImageBackground source={background} style={{minHeight: 650}}>
             <Header actualRoute="Settings" navigation={navigation} />
             <Text>Settings</Text>
-          </ScrollView>
-        </SafeAreaView>
+          </ImageBackground>
+        </ScrollView>
+      </SafeAreaView>
     );
 };
 
