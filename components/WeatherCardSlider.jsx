@@ -42,8 +42,7 @@ const carouselStyles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    paddingTop: 25,
-    paddingBottom: 140
+    marginTop: 25
   },
   item: {
     marginHorizontal: 3,

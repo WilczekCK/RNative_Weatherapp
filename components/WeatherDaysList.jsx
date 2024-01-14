@@ -22,6 +22,11 @@ function WeatherDaysList() {
         <Icon name="sun" />
         <Heading heading="h3">24</Heading>
       </View>
+      <View style={DaysListStyles.item}>
+        <Heading heading="h3" textAlign="left" width={100}>Monday</Heading>
+        <Icon name="sun" />
+        <Heading heading="h3">24</Heading>
+      </View>
     </View>
   );
 }
@@ -32,10 +37,11 @@ const DaysListStyles = StyleSheet.create({
     flexDirection: 'column',
     width: '100%',
     backgroundColor: 'rgba(224, 208, 229, 0.5)',
-    paddingHorizontal: 6,
-    paddingVertical: 2,
+    paddingHorizontal: 20,
+    paddingVertical: 20,
     borderRadius: 14,
     ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
+
   },
   item: {
     display: 'flex',
