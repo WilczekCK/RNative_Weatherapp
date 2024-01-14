@@ -1,62 +1,69 @@
-import {Text, Button, View, StyleSheet, Dimensions, SafeAreaView, ScrollView, ImageBackground} from 'react-native';
+import {
+  Text,
+  Button,
+  View,
+  StyleSheet,
+  Dimensions,
+  SafeAreaView,
+  ScrollView,
+} from 'react-native';
 import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Icon from '../components/Icon';
 import WeatherCardSlider from '../components/WeatherCardSlider';
 import WeatherDaysList from '../components/WeatherDaysList';
+import ImageBackground from '../components/ImageBackground';
 
 const Home = ({navigation, background}) => {
   return (
-      <SafeAreaView>
-        <ScrollView contentInsetAdjustmentBehavior="automatic">
-          <ImageBackground source={background}>
-            <Header actualRoute="Home" navigation={navigation} />
-            <View style={styles.container}>
-              <Heading heading="h2">Kielce</Heading>
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <ImageBackground background={background}>
+        <Header actualRoute="Home" navigation={navigation} />
+        <View style={styles.container}>
+          <Heading heading="h2">Kielce</Heading>
 
-              <Heading heading="h1">20°C</Heading>
+          <Heading heading="h1">20°C</Heading>
 
+          <Heading heading="h4" color="#E1E1E1">
+            Cloudy sky
+          </Heading>
+
+          <View style={styles.weatherVisualStatus}>
+            <Icon name="cloudSun" width="80" height="80" />
+          </View>
+
+          <View style={styles.sunriseSunsetContainer}>
+            <View style={styles.sunriseContainer}>
               <Heading heading="h4" color="#E1E1E1">
-                Cloudy sky
+                SUNRISE
               </Heading>
 
-              <View style={styles.weatherVisualStatus}>
-                <Icon name="cloudSun" width="80" height="80" />
-              </View>
-
-              <View style={styles.sunriseSunsetContainer}>
-                <View style={styles.sunriseContainer}>
-                  <Heading heading="h4" color="#E1E1E1">
-                    SUNRISE
-                  </Heading>
-
-                  <Heading heading="h2">6:11AM</Heading>
-                </View>
-                <View style={styles.sunsetContainer}>
-                  <Heading heading="h4" color="#E1E1E1">
-                    SUNSET
-                  </Heading>
-                  <Heading heading="h2">9:54PM</Heading>
-                </View>
-              </View>
-
-              <WeatherCardSlider/>
-              <WeatherDaysList />
-
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO</Text>
-              <Text>EO2</Text>
+              <Heading heading="h2">6:11AM</Heading>
             </View>
-            </ImageBackground>
-        </ScrollView>
-      </SafeAreaView>
+            <View style={styles.sunsetContainer}>
+              <Heading heading="h4" color="#E1E1E1">
+                SUNSET
+              </Heading>
+              <Heading heading="h2">9:54PM</Heading>
+            </View>
+          </View>
+
+          <WeatherCardSlider />
+          <WeatherDaysList />
+
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO</Text>
+          <Text>EO2</Text>
+        </View>
+      </ImageBackground>
+    </ScrollView>
   );
 };
 
