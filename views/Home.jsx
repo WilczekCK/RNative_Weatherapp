@@ -1,28 +1,10 @@
 import {Text, Button, View, StyleSheet, Dimensions} from 'react-native';
-import * as React from 'react';
-import {useEffect} from 'react';
 import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Icon from '../components/Icon';
-import WeatherCard from '../components/WeatherCard';
-import Carousel from 'react-native-reanimated-carousel';
+import WeatherCardSlider from '../components/WeatherCardSlider';
 
 const Home = ({navigation}) => {
-  const width = Dimensions.get('window').width;
-  const PAGE_WIDTH = width;
-  const COUNT = 5;
-
-  const baseOptions =  ({
-      vertical: false,
-      width: (PAGE_WIDTH / COUNT),
-      height: PAGE_WIDTH / 2,
-
-      style: {
-        width: PAGE_WIDTH,
-        
-      },
-  });
-
   return (
     <>
       <Header actualRoute="Home" navigation={navigation} />
@@ -55,20 +37,7 @@ const Home = ({navigation}) => {
           </View>
         </View>
 
-        <View style={{ flex: 1, width: '100%' }}>
-          <Carousel
-            {...baseOptions}
-            loop={false}
-            autoPlay={false}
-            centerMode={true}
-            data={[...new Array(24).keys()]}
-            renderItem={({ index }) => (
-              <View style={{marginHorizontal: 5}}>
-                <WeatherCard key={index} index weather={{time: `${index+1}PM`, degree: 18, status: 'sun'}}/>
-              </View>
-            )}
-          />
-        </View>
+        <WeatherCardSlider/>
       </View>
     </>
   );
