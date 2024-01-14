@@ -5,7 +5,7 @@ import Icon from './Icon';
 import useBoxShadowGenerator from '../hooks/useBoxShadowGenerator';
 
 function WeatherCard(props) {
-  const {time, degree, status} = props.weather;
+  const {time, degree, status, index} = props.weather;
 
   return (
     <View
