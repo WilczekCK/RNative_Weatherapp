@@ -4,44 +4,48 @@ import WeatherCard from './WeatherCard';
 import Carousel from 'react-native-reanimated-carousel';
 
 function WeatherCardSlider() {
-    const PAGE_WIDTH = Dimensions.get('window').width;
-    const COUNT = 5;
-    const baseOptions =  ({
-        vertical: false,
-        width: (PAGE_WIDTH / COUNT),
-        height: PAGE_WIDTH / 2,
+  const PAGE_WIDTH = Dimensions.get('window').width;
+  const COUNT = 5;
+  const baseOptions = {
+    vertical: false,
+    width: PAGE_WIDTH / COUNT,
+    height: PAGE_WIDTH / 2,
 
-        style: {
-            width: PAGE_WIDTH,
-        },
-    });
+    style: {
+      width: PAGE_WIDTH,
+    },
+  };
 
-    return (
-        <View style={carouselStyles.container}>
-          <Carousel
-            {...baseOptions}
-            loop={false}
-            autoPlay={false}
-            data={[...new Array(24).keys()]}
-            renderItem={({ index }) => (
-              <View style={carouselStyles.item}>
-                <WeatherCard key={index} index weather={{time: `${index+1}PM`, degree: 18, status: 'sun'}}/>
-              </View>
-            )}
-          />
-        </View>
-    );
+  return (
+    <View style={carouselStyles.container}>
+      <Carousel
+        {...baseOptions}
+        loop={false}
+        autoPlay={false}
+        data={[...new Array(24).keys()]}
+        renderItem={({index}) => (
+          <View style={carouselStyles.item}>
+            <WeatherCard
+              key={index}
+              index
+              weather={{time: `${index + 1}PM`, degree: 18, status: 'sun'}}
+            />
+          </View>
+        )}
+      />
+    </View>
+  );
 }
 
 const carouselStyles = StyleSheet.create({
-    container: {
-        flex: 1,
-        width: '100%', 
-        marginVertical: 25,
-    },
-    item: {
-        marginHorizontal: 3
-    }
+  container: {
+    flex: 1,
+    width: '100%',
+    marginVertical: 25,
+  },
+  item: {
+    marginHorizontal: 3,
+  },
 });
 
 export default WeatherCardSlider;
