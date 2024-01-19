@@ -42,7 +42,7 @@ const carouselStyles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    marginTop: 25
+    marginTop: 30,
   },
   item: {
     marginHorizontal: 3,

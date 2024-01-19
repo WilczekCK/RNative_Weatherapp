@@ -40,6 +40,7 @@ const DaysListStyles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 20,
     borderRadius: 14,
+    marginTop: -60,
     ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
 
   },
