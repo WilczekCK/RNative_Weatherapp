@@ -1,17 +1,13 @@
-import { Text, Button } from 'react-native';  
+import {Text, ScrollView} from 'react-native';
+import Header from '../components/Header';
 
 const Search = ({navigation}) => {
-    return (
-        <>
-        <Text>Search</Text>
-        <Button
-            title="Go to homepage"
-            onPress={() =>
-                navigation.navigate('Home')
-            }
-        />
-      </>
-    );
+  return (
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <Header actualRoute="Search" navigation={navigation} />
+      <Text>Search</Text>
+    </ScrollView>
+  );
 };
 
 export default Search;
