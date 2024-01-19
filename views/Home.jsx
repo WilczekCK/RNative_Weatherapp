@@ -13,6 +13,7 @@ import Icon from '../components/Icon';
 import WeatherCardSlider from '../components/WeatherCardSlider';
 import WeatherDaysList from '../components/WeatherDaysList';
 import ImageBackground from '../components/ImageBackground';
+import useBoxShadowGenerator from '../hooks/useBoxShadowGenerator';
 
 const Home = ({navigation, background}) => {
   return (
@@ -51,16 +52,24 @@ const Home = ({navigation, background}) => {
           <WeatherCardSlider />
           <WeatherDaysList />
 
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO</Text>
-          <Text>EO2</Text>
+          <View style={styles.additionalContainer}>
+            <View style={styles.additionalItem}>
+              <Heading heading="h2">Humidity</Heading>
+              <Icon name="humidity" width="80" height="80" />
+            </View>
+            <View style={styles.additionalItem}>
+              <Heading heading="h2">Humidity</Heading>
+              <Icon name="humidity" width="80" height="80" />
+            </View>
+            <View style={styles.additionalItem}>
+              <Heading heading="h2">Humidity</Heading>
+              <Icon name="humidity" width="80" height="80" />
+            </View>
+            <View style={styles.additionalItem}>
+              <Heading heading="h2">Humidity</Heading>
+              <Icon name="humidity" width="80" height="80" />
+            </View>
+          </View>
         </View>
       </ImageBackground>
     </ScrollView>
@@ -95,6 +104,22 @@ const styles = StyleSheet.create({
     gap: 8,
     marginTop: 25,
   },
+  additionalContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap:15,
+    paddingBottom: 20
+  },
+  additionalItem: {
+    flexDirection: 'column',
+    backgroundColor: 'rgba(224, 208, 229, 0.5)',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 14,
+    ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
+    flexGrow: 2
+  }
 });
 
 export default Home;
