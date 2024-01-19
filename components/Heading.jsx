@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import TextWithFont from './TextWithFont';
 
 function Heading(props) {
-    const {color, heading, textAlign, children, width} = props;
+    const {color, heading, textAlign, children, width, showDegree} = props;
 
     return (
         <View className="heading__container" width={width ?? 'auto'}>
@@ -12,6 +12,7 @@ function Heading(props) {
                     color={color ?? 'white'}    
                     textAlign={textAlign    ?? 'center'}>
                 {children}
+                {showDegree && '°C'}
             </TextWithFont>
         </View>
     );

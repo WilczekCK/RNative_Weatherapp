@@ -22,7 +22,7 @@ const Home = ({navigation, background}) => {
         <View style={styles.container}>
           <Heading heading="h2">Kielce</Heading>
 
-          <Heading heading="h1">20°C</Heading>
+          <Heading heading="h1" showDegree={true}>20</Heading>
 
           <Heading heading="h4" color="#E1E1E1">
             Cloudy sky

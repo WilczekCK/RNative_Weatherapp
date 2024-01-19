@@ -22,7 +22,7 @@ function WeatherCard(props) {
       </View>
 
       <View style={weatherCardStyles.child}>
-        <Heading heading="h3">{degree} C</Heading>
+        <Heading heading="h3" showDegree={true}>{degree}</Heading>
       </View>
     </View>
   );

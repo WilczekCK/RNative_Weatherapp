@@ -10,22 +10,22 @@ function WeatherDaysList() {
       <View style={DaysListStyles.item}>
         <Heading heading="h3" textAlign="left" width={100}>Friday</Heading>
         <Icon name="sun" />
-        <Heading heading="h3">24</Heading>
+        <Heading heading="h3" showDegree={true}>24</Heading>
       </View>
       <View style={DaysListStyles.item}>
         <Heading heading="h3" textAlign="left" width={100}>Saturday</Heading>
         <Icon name="sun" />
-        <Heading heading="h3">24</Heading>
+        <Heading heading="h3" showDegree={true}>24</Heading>
       </View>
       <View style={DaysListStyles.item}>
         <Heading heading="h3" textAlign="left" width={100}>Sunday</Heading>
         <Icon name="sun" />
-        <Heading heading="h3">24</Heading>
+        <Heading heading="h3" showDegree={true}>24</Heading>
       </View>
       <View style={DaysListStyles.item}>
         <Heading heading="h3" textAlign="left" width={100}>Monday</Heading>
         <Icon name="sun" />
-        <Heading heading="h3">24</Heading>
+        <Heading heading="h3" showDegree={true}>24</Heading>
       </View>
     </View>
   );
@@ -41,8 +41,9 @@ const DaysListStyles = StyleSheet.create({
     paddingVertical: 20,
     borderRadius: 14,
     marginTop: -60,
+    marginBottom: 30,
     ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
-
+    gap: 15
   },
   item: {
     display: 'flex',
