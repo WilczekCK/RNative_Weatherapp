@@ -5,10 +5,8 @@ import ImageBackground from '../components/ImageBackground';
 const Settings = ({navigation, background}) => {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <ImageBackground background={background}>
-        <Header actualRoute="Settings" navigation={navigation} />
-        <Text>Settings</Text>
-      </ImageBackground>
+      <Header actualRoute="Settings" navigation={navigation} />
+      <Text>Settings</Text>
     </ScrollView>
   );
 };

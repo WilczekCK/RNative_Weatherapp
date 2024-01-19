@@ -10,11 +10,9 @@ function ImageBackground(props) {
   const {background, children} = props;
 
   return (
-    <SafeAreaView>
       <RootImageBackground source={background} style={styles.container}>
         {children}
       </RootImageBackground>
-    </SafeAreaView>
   );
 }
 
@@ -22,7 +20,7 @@ const styles = StyleSheet.create({
   container: {
     minHeight: Dimensions.get('window').height,
     paddingHorizontal: 15,
-    paddingVertical: 10,
+    paddingVertical: 10
   },
 });
 

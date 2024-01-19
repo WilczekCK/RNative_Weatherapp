@@ -5,10 +5,8 @@ import ImageBackground from '../components/ImageBackground';
 const Search = ({navigation, background}) => {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <ImageBackground background={background}>
-        <Header actualRoute="Search" navigation={navigation} />
-        <Text>Search</Text>
-      </ImageBackground>
+      <Header actualRoute="Search" navigation={navigation} />
+      <Text>Search</Text>
     </ScrollView>
   );
 };

@@ -1,7 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {View} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
+import ImageBackground from './ImageBackground';
 
 import Home from '../views/Home';
 import Search from '../views/Search';
@@ -34,15 +35,33 @@ function Router() {
             },
           }}>
           <Stack.Screen name="Home">
-            {props => <Home {...props} background={weatherBackground} />}
+            {props => (
+              <ImageBackground background={weatherBackground}>
+                <SafeAreaView style={{flex: 1}}>
+                  <Home {...props} background={weatherBackground} />
+                </SafeAreaView>
+              </ImageBackground>
+            )}
           </Stack.Screen>
 
           <Stack.Screen name="Settings">
-            {props => <Settings {...props} background={weatherBackground} />}
+            {props => (
+              <ImageBackground background={weatherBackground}>
+                <SafeAreaView style={{flex: 1}}>
+                  <Settings {...props} background={weatherBackground} />
+                </SafeAreaView>
+              </ImageBackground>
+            )}
           </Stack.Screen>
 
           <Stack.Screen name="Search">
-            {props => <Search {...props} background={weatherBackground} />}
+            {props => (
+              <ImageBackground background={weatherBackground}>
+                <SafeAreaView style={{flex: 1}}>
+                  <Search {...props} background={weatherBackground} />
+                </SafeAreaView>
+              </ImageBackground>
+            )}
           </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>

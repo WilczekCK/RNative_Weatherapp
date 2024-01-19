@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RNative_weatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNative_weatherTests.m */; };
+		044279562CF4614D46012ACD /* libPods-RNative_weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 229F01138CDE17EE52AEDE66 /* libPods-RNative_weather.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2164760F2B2A4B0F0018C712 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2164760E2B2A4B0E0018C712 /* main.jsbundle */; };
-		239FD1FA8A87397F51409C72 /* libPods-RNative_weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0917C29076482C72738FCE39 /* libPods-RNative_weather.a */; };
 		2FB81461A49F43598107154A /* Itim-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCEEF07A5E4C4578973D8EC7 /* Itim-Regular.ttf */; };
+		4F69F5A09C315B9229CFB1D7 /* libPods-RNative_weather-RNative_weatherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BBAA512A65AF330833B134 /* libPods-RNative_weather-RNative_weatherTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DDF1DBD4264E8B69CF7E854D /* libPods-RNative_weather-RNative_weatherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FDDA195912934ACA5A31A /* libPods-RNative_weather-RNative_weatherTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,6 @@
 		00E356EE1AD99517003FC87E /* RNative_weatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNative_weatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNative_weatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNative_weatherTests.m; sourceTree = "<group>"; };
-		0917C29076482C72738FCE39 /* libPods-RNative_weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNative_weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* RNative_weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNative_weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNative_weather/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RNative_weather/AppDelegate.mm; sourceTree = "<group>"; };
@@ -40,14 +39,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNative_weather/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNative_weather/main.m; sourceTree = "<group>"; };
 		2164760E2B2A4B0E0018C712 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		503FDDA195912934ACA5A31A /* libPods-RNative_weather-RNative_weatherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNative_weather-RNative_weatherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229F01138CDE17EE52AEDE66 /* libPods-RNative_weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNative_weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A9856535AB5BC55B4623F9 /* Pods-RNative_weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather.debug.xcconfig"; path = "Target Support Files/Pods-RNative_weather/Pods-RNative_weather.debug.xcconfig"; sourceTree = "<group>"; };
+		63BBAA512A65AF330833B134 /* libPods-RNative_weather-RNative_weatherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNative_weather-RNative_weatherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNative_weather/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9B295BB4A5C98DB5FA16CB75 /* Pods-RNative_weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather.debug.xcconfig"; path = "Target Support Files/Pods-RNative_weather/Pods-RNative_weather.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D1E9E6B909C907175BEE14 /* Pods-RNative_weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather.release.xcconfig"; path = "Target Support Files/Pods-RNative_weather/Pods-RNative_weather.release.xcconfig"; sourceTree = "<group>"; };
+		BB903258B5486BA4083D4618 /* Pods-RNative_weather-RNative_weatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather-RNative_weatherTests.release.xcconfig"; path = "Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCEEF07A5E4C4578973D8EC7 /* Itim-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Itim-Regular.ttf"; path = "../assets/fonts/Itim-Regular.ttf"; sourceTree = "<group>"; };
-		E3E803F04025E72BD4C1A181 /* Pods-RNative_weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather.release.xcconfig"; path = "Target Support Files/Pods-RNative_weather/Pods-RNative_weather.release.xcconfig"; sourceTree = "<group>"; };
+		CEB4602F06A8E779FF8FA1ED /* Pods-RNative_weather-RNative_weatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather-RNative_weatherTests.debug.xcconfig"; path = "Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FEE805B4864FB7B7802B5271 /* Pods-RNative_weather-RNative_weatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather-RNative_weatherTests.release.xcconfig"; path = "Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests.release.xcconfig"; sourceTree = "<group>"; };
-		FF0B74A6B563FBD085009D17 /* Pods-RNative_weather-RNative_weatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNative_weather-RNative_weatherTests.debug.xcconfig"; path = "Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF1DBD4264E8B69CF7E854D /* libPods-RNative_weather-RNative_weatherTests.a in Frameworks */,
+				4F69F5A09C315B9229CFB1D7 /* libPods-RNative_weather-RNative_weatherTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239FD1FA8A87397F51409C72 /* libPods-RNative_weather.a in Frameworks */,
+				044279562CF4614D46012ACD /* libPods-RNative_weather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				0917C29076482C72738FCE39 /* libPods-RNative_weather.a */,
-				503FDDA195912934ACA5A31A /* libPods-RNative_weather-RNative_weatherTests.a */,
+				229F01138CDE17EE52AEDE66 /* libPods-RNative_weather.a */,
+				63BBAA512A65AF330833B134 /* libPods-RNative_weather-RNative_weatherTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,10 +146,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B295BB4A5C98DB5FA16CB75 /* Pods-RNative_weather.debug.xcconfig */,
-				E3E803F04025E72BD4C1A181 /* Pods-RNative_weather.release.xcconfig */,
-				FF0B74A6B563FBD085009D17 /* Pods-RNative_weather-RNative_weatherTests.debug.xcconfig */,
-				FEE805B4864FB7B7802B5271 /* Pods-RNative_weather-RNative_weatherTests.release.xcconfig */,
+				61A9856535AB5BC55B4623F9 /* Pods-RNative_weather.debug.xcconfig */,
+				B1D1E9E6B909C907175BEE14 /* Pods-RNative_weather.release.xcconfig */,
+				CEB4602F06A8E779FF8FA1ED /* Pods-RNative_weather-RNative_weatherTests.debug.xcconfig */,
+				BB903258B5486BA4083D4618 /* Pods-RNative_weather-RNative_weatherTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -170,12 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNative_weatherTests" */;
 			buildPhases = (
-				5B1E0CB334CA63CD2A756B0C /* [CP] Check Pods Manifest.lock */,
+				BA28B7B57F777BAA1F537DC1 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				935D0F751FEB104C9E2FB5A0 /* [CP] Embed Pods Frameworks */,
-				FDDE354C84CBA747268A5488 /* [CP] Copy Pods Resources */,
+				74EF3D2DEB1511DBB161B451 /* [CP] Embed Pods Frameworks */,
+				963C7C58DB6E22C06EB2F297 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,13 +191,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNative_weather" */;
 			buildPhases = (
-				21879D8706B49BB9042BE100 /* [CP] Check Pods Manifest.lock */,
+				DAD0F14EB54682E1E0E06782 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				8910DFC12ACA2E7A61903C54 /* [CP] Embed Pods Frameworks */,
-				7553081D3EF3C722B3F09898 /* [CP] Copy Pods Resources */,
+				5610010ED0BFA1711325C960 /* [CP] Embed Pods Frameworks */,
+				45A8B941DDCB6E2BAEAF09E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,29 +282,75 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		21879D8706B49BB9042BE100 /* [CP] Check Pods Manifest.lock */ = {
+		45A8B941DDCB6E2BAEAF09E1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNative_weather-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B1E0CB334CA63CD2A756B0C /* [CP] Check Pods Manifest.lock */ = {
+		5610010ED0BFA1711325C960 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EF3D2DEB1511DBB161B451 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		963C7C58DB6E22C06EB2F297 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA28B7B57F777BAA1F537DC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,72 +372,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7553081D3EF3C722B3F09898 /* [CP] Copy Pods Resources */ = {
+		DAD0F14EB54682E1E0E06782 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNative_weather-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8910DFC12ACA2E7A61903C54 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather/Pods-RNative_weather-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		935D0F751FEB104C9E2FB5A0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDDE354C84CBA747268A5488 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNative_weather-RNative_weatherTests/Pods-RNative_weather-RNative_weatherTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,7 +427,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF0B74A6B563FBD085009D17 /* Pods-RNative_weather-RNative_weatherTests.debug.xcconfig */;
+			baseConfigurationReference = CEB4602F06A8E779FF8FA1ED /* Pods-RNative_weather-RNative_weatherTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -454,7 +454,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEE805B4864FB7B7802B5271 /* Pods-RNative_weather-RNative_weatherTests.release.xcconfig */;
+			baseConfigurationReference = BB903258B5486BA4083D4618 /* Pods-RNative_weather-RNative_weatherTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -478,7 +478,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B295BB4A5C98DB5FA16CB75 /* Pods-RNative_weather.debug.xcconfig */;
+			baseConfigurationReference = 61A9856535AB5BC55B4623F9 /* Pods-RNative_weather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3E803F04025E72BD4C1A181 /* Pods-RNative_weather.release.xcconfig */;
+			baseConfigurationReference = B1D1E9E6B909C907175BEE14 /* Pods-RNative_weather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -18,7 +18,6 @@ import useBoxShadowGenerator from '../hooks/useBoxShadowGenerator';
 const Home = ({navigation, background}) => {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <ImageBackground background={background}>
         <Header actualRoute="Home" navigation={navigation} />
         <View style={styles.container}>
           <Heading heading="h2">Kielce</Heading>
@@ -75,7 +74,7 @@ const Home = ({navigation, background}) => {
             </View>
           </View>
         </View>
-      </ImageBackground>
+
     </ScrollView>
   );
 };
