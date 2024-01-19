@@ -54,20 +54,24 @@ const Home = ({navigation, background}) => {
 
           <View style={styles.additionalContainer}>
             <View style={styles.additionalItem}>
-              <Heading heading="h2">Humidity</Heading>
+              <Heading heading="h4">Humidity</Heading>
               <Icon name="humidity" width="80" height="80" />
+              <Heading heading="h4">72%</Heading>
             </View>
             <View style={styles.additionalItem}>
-              <Heading heading="h2">Humidity</Heading>
-              <Icon name="humidity" width="80" height="80" />
+              <Heading heading="h4">Pressure</Heading>
+              <Icon name="pressure" width="80" height="80" />
+              <Heading heading="h4">1007hPa</Heading>
             </View>
             <View style={styles.additionalItem}>
-              <Heading heading="h2">Humidity</Heading>
-              <Icon name="humidity" width="80" height="80" />
+              <Heading heading="h4">Wind</Heading>
+              <Icon name="wind" width="80" height="80" />
+              <Heading heading="h4">19km/h</Heading>
             </View>
             <View style={styles.additionalItem}>
-              <Heading heading="h2">Humidity</Heading>
-              <Icon name="humidity" width="80" height="80" />
+              <Heading heading="h4">Rainfall</Heading>
+              <Icon name="rainfall" width="80" height="80" />
+              <Heading heading="h4">0mm</Heading>
             </View>
           </View>
         </View>
@@ -109,7 +113,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap:15,
-    paddingBottom: 20
+    paddingBottom: 20,
   },
   additionalItem: {
     flexDirection: 'column',
@@ -118,7 +122,10 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     borderRadius: 14,
     ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
-    flexGrow: 2
+    flexGrow: 2,
+    flexBasis: 120,
+    alignItems: 'center',
+    paddingVertical: 15
   }
 });
 
