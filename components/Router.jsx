@@ -10,17 +10,6 @@ import Settings from '../views/Settings';
 
 const Stack = createNativeStackNavigator();
 function Router() {
-  const [weatherBackground, setWeatherBackground] = React.useState('unset');
-
-  function detectWeatherBackground() {
-    // TODO: Ajax check from api.
-    setWeatherBackground(require('../assets/jpgs/sunny.jpg'));
-  }
-
-  React.useEffect(() => {
-    detectWeatherBackground();
-  }, []);
-
   return (
     <View style={{flex: 1}}>
       <NavigationContainer>
@@ -35,33 +24,15 @@ function Router() {
             },
           }}>
           <Stack.Screen name="Home">
-            {props => (
-              <ImageBackground background={weatherBackground}>
-                <SafeAreaView style={{flex: 1}}>
-                  <Home {...props} background={weatherBackground} />
-                </SafeAreaView>
-              </ImageBackground>
-            )}
+            {props => <Home {...props} />}
           </Stack.Screen>
 
           <Stack.Screen name="Settings">
-            {props => (
-              <ImageBackground background={weatherBackground}>
-                <SafeAreaView style={{flex: 1}}>
-                  <Settings {...props} background={weatherBackground} />
-                </SafeAreaView>
-              </ImageBackground>
-            )}
+            {props => <Search {...props} />}
           </Stack.Screen>
 
           <Stack.Screen name="Search">
-            {props => (
-              <ImageBackground background={weatherBackground}>
-                <SafeAreaView style={{flex: 1}}>
-                  <Search {...props} background={weatherBackground} />
-                </SafeAreaView>
-              </ImageBackground>
-            )}
+            {props => <Search {...props} />}
           </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>

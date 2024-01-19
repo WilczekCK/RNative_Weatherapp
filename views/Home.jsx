@@ -1,10 +1,6 @@
 import {
-  Text,
-  Button,
   View,
   StyleSheet,
-  Dimensions,
-  SafeAreaView,
   ScrollView,
 } from 'react-native';
 import Header from '../components/Header';
@@ -12,10 +8,9 @@ import Heading from '../components/Heading';
 import Icon from '../components/Icon';
 import WeatherCardSlider from '../components/WeatherCardSlider';
 import WeatherDaysList from '../components/WeatherDaysList';
-import ImageBackground from '../components/ImageBackground';
 import useBoxShadowGenerator from '../hooks/useBoxShadowGenerator';
 
-const Home = ({navigation, background}) => {
+const Home = ({navigation}) => {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
         <Header actualRoute="Home" navigation={navigation} />
