@@ -35,6 +35,7 @@ const weatherCardStyles = StyleSheet.create({
     paddingHorizontal: 6,
     paddingVertical: 2,
     borderRadius: 14,
+    alignItems: 'center',
     ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
   },
   child: {

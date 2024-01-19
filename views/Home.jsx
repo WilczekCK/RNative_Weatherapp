@@ -106,7 +106,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     gap: 8,
-    marginTop: 25,
   },
   additionalContainer: {
     display: 'flex',
@@ -118,14 +117,11 @@ const styles = StyleSheet.create({
   additionalItem: {
     flexDirection: 'column',
     backgroundColor: 'rgba(224, 208, 229, 0.5)',
-    paddingHorizontal: 6,
-    paddingVertical: 2,
     borderRadius: 14,
     ...useBoxShadowGenerator(0, 1, '#000000', 0.25, 4, 0, '#000000'),
-    flexGrow: 2,
-    flexBasis: 120,
     alignItems: 'center',
-    paddingVertical: 15
+    paddingVertical: 15,
+    flexBasis: '48%'
   }
 });
 
