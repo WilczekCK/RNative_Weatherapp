@@ -9,7 +9,7 @@ function WeatherCardSlider() {
   const baseOptions = {
     vertical: false,
     width: PAGE_WIDTH / COUNT,
-    height: PAGE_WIDTH / 2,
+    height: 190,
     position: 'relative',
 
     style: {
