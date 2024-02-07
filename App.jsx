@@ -26,6 +26,7 @@ function App() {
 
   async function fetchData(){
     const weather = await useWeatherModel.fetch();
+    console.log(weather);
     detectWeatherBackground(weather)
   }
   React.useEffect(() => {
