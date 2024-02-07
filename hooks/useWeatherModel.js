@@ -8,7 +8,7 @@ export default useWeatherFetch = {
         return response.data.current;      
     },
   
-    convertDate(weather) {
+    convertSingleDate(weather) {
         let time = weather.last_updated.split(' ');
         time = {
           date: time[0],

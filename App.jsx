@@ -9,7 +9,7 @@ function App() {
   const [weatherBackground, setWeatherBackground] = React.useState('unset');
 
   function detectWeatherBackground(weather) {    
-    const time = useWeatherModel.convertDate(weather);
+    const time = useWeatherModel.convertSingleDate(weather);
 
     if (time.onlyHour >= 5 && time.onlyHour <= 18) {
       // Day
